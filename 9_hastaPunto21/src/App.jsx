@@ -43,7 +43,6 @@ const AppContainer = styled.div`
   width: 100vw;
   height: 100vh;
   background-image: url("https://estaticos.muyinteresante.es/uploads/images/dossier/5d47f5455cafe8f920a7633c/especial-navidad.jpg");
-
   background-repeat: no-repeat;
   background-size: cover;
 `;

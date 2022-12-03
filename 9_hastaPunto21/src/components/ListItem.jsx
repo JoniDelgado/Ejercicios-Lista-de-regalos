@@ -50,9 +50,6 @@ const ListItem = ({ setIsOpenForm }) => {
               <Button type="button" onClick={() => handleEditItem(id)}>
                 {<RiEdit2Fill />}
               </Button>
-              <Button type="button" onClick={() => handleEditItem(id)}>
-                {<RiPrinterLine />}
-              </Button>
               <Button type="button" onClick={() => handleDuplicateItem(id)}>
                 {<CgDuplicate />}
               </Button>

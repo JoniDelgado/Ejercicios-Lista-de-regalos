@@ -57,10 +57,10 @@ const GiftForm = ({ setIsOpenForm, keyCounter }) => {
             name="gift"
             onChange={handleInputChange}
             value={giftForm.gift}
+            placeholder="Regalo"
           />
           {!isEditing && (
             <Button type="button" onClick={handleRandomGift}>
-              {" "}
               {<GiPerspectiveDiceSixFacesRandom />}
             </Button>
           )}
@@ -71,18 +71,21 @@ const GiftForm = ({ setIsOpenForm, keyCounter }) => {
           onChange={handleInputChange}
           value={giftForm.quantity}
           min="1"
+          placeholder="Cantidad"
         />
         <input
           type="text"
           name="name"
           onChange={handleInputChange}
           value={giftForm.name}
+          placeholder="Nombre del destinatario"
         />
         <input
           type="url"
           name="image"
           onChange={handleInputChange}
           value={giftForm.image}
+          placeholder="URL imagen"
         />
         <input
           type="number"
@@ -90,6 +93,7 @@ const GiftForm = ({ setIsOpenForm, keyCounter }) => {
           onChange={handleInputChange}
           value={giftForm.price}
           min="0"
+          placeholder="Precio"
         />
         <button type="submit">{isEditing ? "Editar" : "Agregar"}</button>
         <button onClick={() => setIsOpenForm(false)}>Cancelar</button>
